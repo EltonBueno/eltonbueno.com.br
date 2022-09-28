@@ -24,7 +24,7 @@
         <div class="row shadow "  >
             <nav class="navbar navbar-expand-xl p-3 bg-primary ">
                 <div class="container-fluid" id="menu">
-                  <a class="navbar-brand col-md-6" href="{{ route('index') }}">Elton Bueno</a>
+                  <a class="navbar-brand col-md-6" href="{{ route('index') }}"><img class="img-fluid ms-5" src="/images/logo.png" alt="" width="40px"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -66,7 +66,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h2 class="logo"><a href=""> LOGO </a></h2>
+                    <h2 class="logo"><a href=""> <img class="img-fluid mt-4" src="/images/logo.png" alt="" width="100px"> </a></h2>
                 </div>
                 <div class="col-sm-2">
                     <h5>Inicio</h5>
