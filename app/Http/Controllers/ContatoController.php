@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\contato;
 use Illuminate\Http\Request;
 
+
 class ContatoController extends Controller
 {
     /**
@@ -14,7 +15,8 @@ class ContatoController extends Controller
      */
     public function index()
     {
-        //
+        $contatos = Contato::OrderBy('');
+        return view('contato.index')->with(compact('contatos'));
     }
 
     /**
@@ -24,7 +26,9 @@ class ContatoController extends Controller
      */
     public function create()
     {
-        //
+        $contato = null;
+        return view('contato.form')->with(compact('contato'));
+
     }
 
     /**
@@ -35,7 +39,11 @@ class ContatoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $contato = new Contato();
+        $contato->fill($request->all());
+        $contato->save();
+        return redirect()->route('index');
     }
 
     /**
