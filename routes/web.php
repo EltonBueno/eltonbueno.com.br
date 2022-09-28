@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContatoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/' , function(){
+    return view('home.index');
+})->name('index');
+
+
+Route::prefix('contato')
+    ->controller(ContatoController::class)
+    ->group(function ()
+    {
+        route::get('/', 'index')->name('contato.index');
+        route::get('/novo', 'create')->name('contato.create');
+        route::post('/cadastrar', 'store')->name('contato.store');
+    });
+
+
 
 require __DIR__.'/auth.php';
