@@ -2,7 +2,7 @@
 
 @section('conteudo')
  <div class="container">
-    <div class="" id="topo" >
+    <div class="" id="sobre-mim" >
         <h1><b>Designer, Desenvolvedor Frontend e Backend</b></h1>
 
         <h4>Eu projeto e codifico coisas lindamente simples e amo o que faço.</h4>
@@ -26,8 +26,8 @@
                    <a>
                    Desde o início da minha jornada como designer freelancer há <br>
                    mais de 9 anos, fiz trabalho remoto para agências e politicos,<br>
-                   colaborei com pessoas talentosas para criar um site para a<br>
-                   Pousada Shamballah para reservar. Estou tranquilamente<br>
+                   colaborei com pessoas talentosas para criar um site de reservar para a<br>
+                   Pousada Shamballah. Estou tranquilamente<br>
                    confiante, naturalmente curioso e trabalhando perpetuamente<br>
                    para melhorar minhas habilidades.
                    </a>
@@ -45,12 +45,12 @@
     {{-- Container --}}
     <div class="container">
         {{-- Habilidades --}}
-        <div class="row mt-5 justify-content-center text-center" id="skill">
+        <div class="row mt-5 justify-content-center text-center" id="habilidades">
             <div class="col-md-3 before mt-5 " data-anime="right">
                 <img class="img-fluid" src="/images/graphic-designer.png" width="70px">
                 <h2>Designer Gráfico</h2>
                 <br>
-                <p>Sempre gostei de criar artes gráficas como panfletos, folders, logotipos e cartões de visita</p>
+                <p>Sempre gostei de criar artes gráficas como panfletos, folders, logotipos e cartões de visita.</p>
                 <br>
                 <h4 style="color:#827cee;">Coisas que gosto de projetar:</h4>
                 <br>
@@ -90,7 +90,7 @@
                 <img class="img-fluid" src="/images/web-development.png" width="70px">
                 <h2>Back-end</h2>
                 <br>
-                <p>Gosto de da logica de programação e dar vida a sistemas, sempre procurando aprender mais.</p>
+                <p>Gosto de da lógica de programação e dar vida a sistemas, sempre procurando aprender mais.</p>
                 <br>
                 <h4 style="color:#827cee;">Linguagens:</h4>
                 <br>

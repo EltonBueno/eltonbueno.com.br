@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Elton Bueno</title>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <title>Elton Bueno @yield('titulo')</title>
     {{-- BOOTSTRAP --}}
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -31,11 +32,11 @@
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar navbar-dark bg-primary ">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#topo">Sobre mim</a>
+                        <a class="nav-link active" aria-current="page" href="#sobre-mim">Sobre mim</a>
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="#skill">Habilidades</a>
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
                       </li>
 
                       <li class="nav-item">
@@ -69,12 +70,12 @@
                     <h2 class="logo"><a href=""> <img class="img-fluid mt-4" src="/images/logo.png" alt="" width="100px"> </a></h2>
                 </div>
                 <div class="col-sm-2">
-                    <h5>Inicio</h5>
+                    <h5>Menu</h5>
                     <ul>
-                        <li><a href="#topo">Sobre mim</a></li>
-                        <li><a href="#skill">Habilidades</a></li>
+                        <li><a href="#sobre-mim">Sobre mim</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#trabalhos-recentes">Trabalhos Recentes</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="{{route('contato.create')}}">Contato</a></li>
                     </ul>
                 </div>
 
