@@ -32,15 +32,15 @@
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar navbar-dark bg-primary ">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#topo">Sobre mim</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Sobre mim</a>
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="#skill">Habilidades</a>
+                        <a class="nav-link" href="{{ route('index') }}">Habilidades</a>
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="#trabalhos-recentes">Trabalhos Recentes</a>
+                        <a class="nav-link" href="{{ route('index') }}">Trabalhos Recentes</a>
                       </li>
 
                       <li class="nav-item">
